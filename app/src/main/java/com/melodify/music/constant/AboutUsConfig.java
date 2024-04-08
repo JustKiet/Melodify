@@ -1,18 +1,17 @@
 package com.melodify.music.constant;
 
 public interface AboutUsConfig {
-    String ABOUT_US_TITLE = "TinCoder";
-    String ABOUT_US_CONTENT = "Provides Android, iOS, Web Source Codes and Development Services. " +
-            "Highly Committed to Quality Products and Excellent Services.";
-    String ABOUT_US_SLOGAN = "Highly committed to quality products & excellent services";
-    String ABOUT_US_WEBSITE_TITLE = "Website TinCoder";
+    String ABOUT_US_TITLE = "A Product of Group 4";
+    String ABOUT_US_CONTENT = "Provides users with optimal music services, proudly giving you TOP QUALITY TRACKS.";
+    String ABOUT_US_SLOGAN = "Experience the harmony of music and satisfaction with Melodify";
+    String ABOUT_US_WEBSITE_TITLE = "Our Website";
 
-    String PAGE_FACEBOOK = "fb://page/tincoder";
-    String LINK_FACEBOOK = "https://www.facebook.com/tincoder";
-    String LINK_YOUTUBE = "https://www.youtube.com/channel/UCu3DXfXYgygIYXN8TduNcNQ";
-    String PHONE_NUMBER = "+84392229676";
-    String GMAIL = "mixproduction29932@gmail.com";
-    String SKYPE_ID = "dangtin29932";
-    String ZALO_LINK = "https://zalo.me/0392229676";
-    String WEBSITE = "https://alabaster-drop-b52.notion.site/TinCoder-Full-Source-Code-Android-c1f9d9d224004932823b6d5061c80dbc";
+    String PAGE_FACEBOOK = "https://www.facebook.com/groups/1199210663926081/posts/1199670603880087/";
+    String LINK_FACEBOOK = "https://www.facebook.com/groups/1199210663926081/posts/1199670603880087/";
+    String LINK_YOUTUBE = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    String PHONE_NUMBER = "+84832281755";
+    String GMAIL = "group4@gmail.com";
+    String SKYPE_ID = "group4";
+    String ZALO_LINK = "https://zalo.me/";
+    String WEBSITE = "https://google.com";
 }

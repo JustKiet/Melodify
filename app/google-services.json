@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "95115399518",
+    "firebase_url": "https://melodify-nhom4-default-rtdb.firebaseio.com",
+    "project_id": "melodify-nhom4",
+    "storage_bucket": "melodify-nhom4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95115399518:android:cb49f50936c67928a0bfcf",
+        "android_client_info": {
+          "package_name": "com.melodify.music"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_vK8ywWJT4_QM3mx4621o29AAL0v8HuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

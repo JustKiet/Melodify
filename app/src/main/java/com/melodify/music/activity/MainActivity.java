@@ -6,7 +6,10 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +19,7 @@ import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.preference.PreferenceManager;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,6 +30,7 @@ import com.melodify.music.databinding.ActivityMainBinding;
 import com.melodify.music.fragment.AdminFeedbackFragment;
 import com.melodify.music.fragment.AdminHomeFragment;
 import com.melodify.music.fragment.AllSongsFragment;
+import com.melodify.music.fragment.ChangeLanguageFragment;
 import com.melodify.music.fragment.ChangePasswordFragment;
 import com.melodify.music.fragment.ContactFragment;
 import com.melodify.music.fragment.FavoriteFragment;
@@ -40,6 +45,8 @@ import com.melodify.music.prefs.DataStoreManager;
 import com.melodify.music.service.MusicService;
 import com.melodify.music.utils.GlideUtils;
 
+import java.util.Locale;
+
 @SuppressLint("NonConstantResourceId")
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -52,6 +59,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     public static final int TYPE_FEEDBACK = 7;
     public static final int TYPE_CONTACT = 8;
     public static final int TYPE_CHANGE_PASSWORD = 9;
+
+    public static final int TYPE_CHANGE_LANGUAGE = 10;
 
     private int mTypeScreen = TYPE_HOME;
     private ActivityMainBinding mActivityMainBinding;
@@ -67,9 +76,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        loadLocale();
         mActivityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(mActivityMainBinding.getRoot());
-
         checkNotificationPermission();
         LocalBroadcastManager.getInstance(this).registerReceiver(mBroadcastReceiver,
                 new IntentFilter(Constant.CHANGE_LISTENER));
@@ -123,6 +132,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mActivityMainBinding.menuLeft.tvMenuContact.setOnClickListener(this);
         mActivityMainBinding.menuLeft.tvMenuChangePassword.setOnClickListener(this);
         mActivityMainBinding.menuLeft.tvMenuSignOut.setOnClickListener(this);
+        mActivityMainBinding.menuLeft.tvMenuLanguage.setOnClickListener(this);
 
         mActivityMainBinding.layoutBottom.imgPrevious.setOnClickListener(this);
         mActivityMainBinding.layoutBottom.imgPlay.setOnClickListener(this);
@@ -186,6 +196,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         replaceFragment(new ChangePasswordFragment());
         mTypeScreen = TYPE_CHANGE_PASSWORD;
         initToolbar(getString(R.string.menu_change_password));
+        displayLayoutPlayAll();
+    }
+
+    private void openChangeLanguageScreen() {
+        replaceFragment(new ChangeLanguageFragment());
+        mTypeScreen = TYPE_CHANGE_LANGUAGE;
+        initToolbar(getString(R.string.menu_language));
         displayLayoutPlayAll();
     }
 
@@ -258,6 +275,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.tv_menu_change_password:
                 mActivityMainBinding.drawerLayout.closeDrawer(GravityCompat.START);
                 openChangePasswordScreen();
+                break;
+
+            case R.id.tv_menu_language:
+                mActivityMainBinding.drawerLayout.closeDrawer(GravityCompat.START);
+                openChangeLanguageScreen();
                 break;
 
             case R.id.tv_menu_sign_out:
@@ -394,5 +416,22 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     protected void onDestroy() {
         super.onDestroy();
         LocalBroadcastManager.getInstance(this).unregisterReceiver(mBroadcastReceiver);
+    }
+
+    private void loadLocale() {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String language = preferences.getString("language", "");
+        setLocale(language);
+    }
+
+    private void setLocale(String language) {
+        Locale locale = new Locale(language);
+        Locale.setDefault(locale);
+
+        Configuration config = new Configuration();
+        config.locale = locale;
+
+        Resources resources = getResources();
+        resources.updateConfiguration(config, resources.getDisplayMetrics());
     }
 }

@@ -34,4 +34,7 @@
     <color name="red">#F80A0A</color>
     <color name="white">#FFFFFFFF</color>
     <color name="xam2">#393838</color>
+    <color name="dark1">#1F1F1F</color>
+    <color name="gold">#FEA10B</color>
+    <color name="darker">#141414</color>
 </resources>

@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Melodify</string>
+
+    <string name="menu_home">Trang chủ</string>
+    <string name="menu_all_songs">Tất cả bài hát</string>
+    <string name="menu_featured_songs">Bài hát nổi bật</string>
+    <string name="menu_popular_songs">Bài hát phổ biến</string>
+    <string name="menu_new_songs">Bài hát mới</string>
+    <string name="menu_favorite_songs">Bài hát yêu thích</string>
+    <string name="menu_feedback">Phản hồi</string>
+    <string name="menu_contact">Liên hệ</string>
+    <string name="menu_change_password">Đổi mật khẩu</string>
+    <string name="menu_sign_out">Đăng xuất</string>
+    <string name="menu_language">Ngôn ngữ</string>
+
+    <string name="play_all">Phát tất cả</string>
+    <string name="view_all">Xem tất cả</string>
+    <string name="music_player">Trình phát nhạc</string>
+    <string name="views">Lượt xem</string>
+    <string name="label_start_time">00:00</string>
+    <string name="label_add_song">Thêm bài hát</string>
+    <string name="label_update_song">Cập nhật bài hát</string>
+
+    <!-- action -->
+    <string name="action_ok">Đồng ý</string>
+    <string name="action_cancel">Hủy</string>
+
+    <!-- Validate -->
+    <string name="name_require">Vui lòng nhập tên của bạn</string>
+    <string name="comment_require">Vui lòng nhập bình luận của bạn</string>
+
+    <!-- Hint -->
+    <string name="hint_search_name">Tên bài hát…</string>
+
+    <!-- Label -->
+    <string name="label_artist">Nghệ sĩ:</string>
+
+    <!-- Message -->
+    <string name="msg_please_waiting">Vui lòng đợi...</string>
+    <string name="msg_send_feedback_success">Gửi phản hồi thành công!</string>
+    <string name="msg_exit_app">Bạn có chắc muốn thoát không?</string>
+    <string name="msg_get_date_error">Lỗi chung, vui lòng thử lại sau</string>
+
+    <!-- Module user -->
+    <string name="hint_email">Email…</string>
+    <string name="hint_password">Mật khẩu…</string>
+    <string name="hint_password_old">Mật khẩu cũ…</string>
+    <string name="hint_password_new">Mật khẩu mới…</string>
+    <string name="hint_password_confirm">Xác nhận mật khẩu mới…</string>
+
+    <string name="admin">Quản trị viên</string>
+    <string name="user">Người dùng</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="have_account">Đã có tài khoản?</string>
+    <string name="have_not_account">Chưa có tài khoản?</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="sign_out">Đăng xuất</string>
+    <string name="reset_password">Đặt lại mật khẩu</string>
+
+    <string name="msg_email_require">Vui lòng nhập email của bạn</string>
+    <string name="msg_password_require">Vui lòng nhập mật khẩu của bạn</string>
+    <string name="msg_email_invalid">Email của bạn không hợp lệ</string>
+    <string name="msg_email_invalid_admin">Email của quản trị viên cần đúng định dạng …@admin.com</string>
+    <string name="msg_email_invalid_user">Sai định dạng email cho người dùng</string>
+
+    <string name="msg_old_password_require">Vui lòng nhập mật khẩu cũ</string>
+    <string name="msg_new_password_require">Vui lòng nhập mật khẩu mới</string>
+    <string name="msg_confirm_password_require">Vui lòng nhập xác nhận mật khẩu mới</string>
+    <string name="msg_old_password_invalid">Mật khẩu cũ không đúng</string>
+    <string name="msg_confirm_password_invalid">Xác nhận mật khẩu mới không khớp</string>
+    <string name="msg_new_password_invalid">Mật khẩu mới trùng với mật khẩu cũ</string>
+
+    <string name="msg_change_password_successfully">Đổi mật khẩu thành công</string>
+    <string name="msg_reset_password_successfully">Đặt lại mật khẩu thành công, vui lòng kiểm tra email của bạn</string>
+
+    <string name="msg_sign_up_error">Đăng ký thất bại, vui lòng thử lại</string>
+    <string name="msg_sign_in_error">Đăng nhập thất bại, vui lòng thử lại</string>
+
+    <string name="song_name">Tên(*)</string>
+    <string name="song_artist">Nghệ sĩ(*)</string>
+    <string name="song_image">Hình ảnh(*)</string>
+    <string name="song_link_url">Liên kết url(*)</string>
+    <string name="song_featured">Nổi bật</string>
+    <string name="song_latest">Mới nhất</string>
+    <string name="label_featured">Nổi bật:</string>
+    <string name="label_latest">Mới nhất:</string>
+
+    <string name="action_add">Thêm</string>
+    <string name="action_edit">Cập nhật</string>
+
+    <string name="msg_delete_title">Xác nhận xóa</string>
+    <string name="msg_confirm_delete">Bạn có chắc muốn xóa mục này không?</string>
+    <string name="msg_delete_movie_successfully">Xóa bài hát thành công</string>
+    <string name="msg_name_song_require">Vui lòng nhập tên</string>
+    <string name="msg_artist_song_require">Vui lòng nhập nghệ sĩ</string>
+    <string name="msg_image_song_require">Vui lòng nhập hình ảnh</string>
+    <string name="msg_link_song_require">Vui lòng nhập liên kết url</string>
+    <string name="msg_edit_song_success">Cập nhật bài hát thành công</string>
+    <string name="msg_add_song_success">Thêm bài hát thành công</string>
+
+    <string name="label_facebook">Facebook</string>
+    <string name="label_call">Gọi điện thoại</string>
+    <string name="label_gmail">Gmail</string>
+    <string name="label_skype">Skype</string>
+    <string name="label_youtube">Youtube</string>
+    <string name="label_zalo">Zalo</string>
+
+    <string name="feedback_name">Tên đầy đủ (*)</string>
+    <string name="feedback_email">Email</string>
+    <string name="feedback_phone">Số điện thoại</string>
+    <string name="feedback_comment">Bình luận (*)</string>
+    <string name="send_feedback">Gửi phản hồi</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Tin nhắn</string>
+    <string name="sync_header">Đồng bộ hóa</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Chữ ký của bạn</string>
+    <string name="reply_title">Hành động trả lời mặc định</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Đồng bộ hóa email định kỳ</string>
+    <string name="attachment_title">Tải xuống tập tin đính kèm đến</string>
+    <string name="attachment_summary_on">Tự động tải xuống tập tin đính kèm cho email đến</string>
+    <string name="attachment_summary_off">Chỉ tải xuống tập tin đính kèm khi được yêu cầu thủ công</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Xin chào, đoạn văn trắng</string>
+</resources>

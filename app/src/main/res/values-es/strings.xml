@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Melodify</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_all_songs">Todas las canciones</string>
+    <string name="menu_featured_songs">Canciones destacadas</string>
+    <string name="menu_popular_songs">Canciones populares</string>
+    <string name="menu_new_songs">Canciones nuevas</string>
+    <string name="menu_favorite_songs">Canciones favoritas</string>
+    <string name="menu_feedback">Comentarios</string>
+    <string name="menu_contact">Contacto</string>
+    <string name="menu_change_password">Cambiar contraseña</string>
+    <string name="menu_sign_out">Cerrar sesión</string>
+    <string name="menu_language">Idioma</string>
+
+    <string name="play_all">Reproducir todo</string>
+    <string name="view_all">Ver todo</string>
+    <string name="music_player">Reproductor de música</string>
+    <string name="views">Vistas</string>
+    <string name="label_start_time">00:00</string>
+    <string name="label_add_song">Agregar canción</string>
+    <string name="label_update_song">Actualizar canción</string>
+
+    <!-- action -->
+    <string name="action_ok">Aceptar</string>
+    <string name="action_cancel">Cancelar</string>
+
+    <!-- Validate -->
+    <string name="name_require">Por favor, ingrese su nombre</string>
+    <string name="comment_require">Por favor, ingrese su comentario</string>
+
+    <!-- Hint -->
+    <string name="hint_search_name">Nombre de la canción...</string>
+
+    <!-- Label -->
+    <string name="label_artist">Artista:</string>
+
+    <!-- Message -->
+    <string name="msg_please_waiting">Por favor, espere...</string>
+    <string name="msg_send_feedback_success">¡Comentario enviado con éxito!</string>
+    <string name="msg_exit_app">¿Está seguro de que desea salir?</string>
+    <string name="msg_get_date_error">Error general, por favor intente nuevamente más tarde</string>
+
+    <!-- Module user -->
+    <string name="hint_email">Correo electrónico...</string>
+    <string name="hint_password">Contraseña...</string>
+    <string name="hint_password_old">Contraseña antigua...</string>
+    <string name="hint_password_new">Nueva contraseña...</string>
+    <string name="hint_password_confirm">Confirmar nueva contraseña...</string>
+
+    <string name="admin">Administrador</string>
+    <string name="user">Usuario</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="have_account">¿Ya tienes una cuenta?</string>
+    <string name="have_not_account">¿No tienes una cuenta?</string>
+    <string name="sign_in">Iniciar sesión</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="change_password">Cambiar contraseña</string>
+    <string name="sign_out">Cerrar sesión</string>
+    <string name="reset_password">Restablecer contraseña</string>
+
+    <string name="msg_email_require">Por favor, ingrese su correo electrónico</string>
+    <string name="msg_password_require">Por favor, ingrese su contraseña</string>
+    <string name="msg_email_invalid">Su correo electrónico no es válido</string>
+    <string name="msg_email_invalid_admin">El correo electrónico del administrador debe tener el formato correcto ...@admin.com</string>
+    <string name="msg_email_invalid_user">Formato de correo electrónico incorrecto para el usuario</string>
+
+    <string name="msg_old_password_require">Por favor, ingrese la contraseña antigua</string>
+    <string name="msg_new_password_require">Por favor, ingrese la nueva contraseña</string>
+    <string name="msg_confirm_password_require">Por favor, ingrese la confirmación de la nueva contraseña</string>
+    <string name="msg_old_password_invalid">Contraseña antigua incorrecta</string>
+    <string name="msg_confirm_password_invalid">La confirmación de la nueva contraseña no coincide</string>
+    <string name="msg_new_password_invalid">La nueva contraseña es igual a la contraseña antigua</string>
+
+    <string name="msg_change_password_successfully">Contraseña cambiada con éxito</string>
+    <string name="msg_reset_password_successfully">Restablecimiento de contraseña exitoso, por favor revise su correo electrónico</string>
+
+    <string name="msg_sign_up_error">Registro fallido, por favor intente nuevamente</string>
+    <string name="msg_sign_in_error">Inicio de sesión fallido, por favor intente nuevamente</string>
+
+    <string name="song_name">Nombre(*)</string>
+    <string name="song_artist">Artista(*)</string>
+    <string name="song_image">Imagen(*)</string>
+    <string name="song_link_url">URL del enlace(*)</string>
+    <string name="song_featured">Destacado</string>
+    <string name="song_latest">Último</string>
+    <string name="label_featured">Destacado:</string>
+    <string name="label_latest">Último:</string>
+
+    <string name="action_add">Agregar</string>
+    <string name="action_edit">Editar</string>
+
+    <string name="msg_delete_title">Confirmación de eliminación</string>
+    <string name="msg_confirm_delete">¿Estás seguro de que quieres eliminar este elemento?</string>
+    <string name="msg_delete_movie_successfully">Canción eliminada exitosamente</string>
+    <string name="msg_name_song_require">Por favor, ingrese un nombre</string>
+    <string name="msg_artist_song_require">Por favor, ingrese un artista</string>
+    <string name="msg_image_song_require">Por favor, ingrese una imagen</string>
+    <string name="msg_link_song_require">Por favor, ingrese un enlace URL</string>
+    <string name="msg_edit_song_success">Canción actualizada exitosamente</string>
+    <string name="msg_add_song_success">Canción agregada exitosamente</string>
+
+    <string name="label_facebook">Facebook</string>
+    <string name="label_call">Llamar</string>
+    <string name="label_gmail">Gmail</string>
+    <string name="label_skype">Skype</string>
+    <string name="label_youtube">Youtube</string>
+    <string name="label_zalo">Zalo</string>
+
+    <string name="feedback_name">Nombre completo (*)</string>
+    <string name="feedback_email">Correo electrónico</string>
+    <string name="feedback_phone">Teléfono</string>
+    <string name="feedback_comment">Comentario (*)</string>
+    <string name="send_feedback">Enviar comentarios</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Mensajes</string>
+    <string name="sync_header">Sincronización</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Tu firma</string>
+    <string name="reply_title">Acción de respuesta predeterminada</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sincronizar correos electrónicos regularmente</string>
+    <string name="attachment_title">Descargar archivos adjuntos</string>
+    <string name="attachment_summary_on">Descargar automáticamente archivos adjuntos de correos electrónicos entrantes</string>
+    <string name="attachment_summary_off">Descargar archivos adjuntos solo cuando se solicite manualmente</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hola, fragmento en blanco</string>
+</resources>

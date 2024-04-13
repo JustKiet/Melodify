@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Melodify</string>
+
+    <string name="menu_home">主页</string>
+    <string name="menu_all_songs">所有歌曲</string>
+    <string name="menu_featured_songs">精选歌曲</string>
+    <string name="menu_popular_songs">热门歌曲</string>
+    <string name="menu_new_songs">最新歌曲</string>
+    <string name="menu_favorite_songs">收藏的歌曲</string>
+    <string name="menu_feedback">反馈</string>
+    <string name="menu_contact">联系方式</string>
+    <string name="menu_change_password">更改密码</string>
+    <string name="menu_sign_out">登出</string>
+    <string name="menu_language">语言</string>
+
+    <string name="play_all">播放全部</string>
+    <string name="view_all">查看全部</string>
+    <string name="music_player">音乐播放器</string>
+    <string name="views">浏览量</string>
+    <string name="label_start_time">00:00</string>
+    <string name="label_add_song">添加歌曲</string>
+    <string name="label_update_song">更新歌曲</string>
+
+    <!-- action -->
+    <string name="action_ok">确认</string>
+    <string name="action_cancel">取消</string>
+
+    <!-- Validate -->
+    <string name="name_require">请输入您的姓名</string>
+    <string name="comment_require">请输入您的评论</string>
+
+    <!-- Hint -->
+    <string name="hint_search_name">歌曲名称...</string>
+
+    <!-- Label -->
+    <string name="label_artist">艺术家：</string>
+
+    <!-- Message -->
+    <string name="msg_please_waiting">请稍候...</string>
+    <string name="msg_send_feedback_success">反馈发送成功！</string>
+    <string name="msg_exit_app">您确定要退出吗？</string>
+    <string name="msg_get_date_error">常规错误，请稍后重试</string>
+
+    <!-- Module user -->
+    <string name="hint_email">电子邮件...</string>
+    <string name="hint_password">密码...</string>
+    <string name="hint_password_old">旧密码...</string>
+    <string name="hint_password_new">新密码...</string>
+    <string name="hint_password_confirm">确认新密码...</string>
+
+    <string name="admin">管理员</string>
+    <string name="user">用户</string>
+    <string name="sign_up">注册</string>
+    <string name="have_account">已有账号？</string>
+    <string name="have_not_account">没有账号？</string>
+    <string name="sign_in">登录</string>
+    <string name="forgot_password">忘记密码？</string>
+    <string name="change_password">修改密码</string>
+    <string name="sign_out">退出登录</string>
+    <string name="reset_password">重置密码</string>
+
+    <string name="msg_email_require">请输入您的电子邮件</string>
+    <string name="msg_password_require">请输入您的密码</string>
+    <string name="msg_email_invalid">您的电子邮件无效</string>
+    <string name="msg_email_invalid_admin">管理员电子邮件必须是正确的格式...@admin.com</string>
+    <string name="msg_email_invalid_user">用户电子邮件格式不正确</string>
+
+    <string name="msg_old_password_require">请输入旧密码</string>
+    <string name="msg_new_password_require">请输入新密码</string>
+    <string name="msg_confirm_password_require">请输入新密码确认</string>
+    <string name="msg_old_password_invalid">旧密码错误</string>
+    <string name="msg_confirm_password_invalid">新密码确认不匹配</string>
+    <string name="msg_new_password_invalid">新密码与旧密码相同</string>
+
+    <string name="msg_change_password_successfully">密码修改成功</string>
+    <string name="msg_reset_password_successfully">密码重置成功，请查看您的电子邮件</string>
+
+    <string name="msg_sign_up_error">注册失败，请重试</string>
+    <string name="msg_sign_in_error">登录失败，请重试</string>
+
+    <string name="song_name">名称(*)</string>
+    <string name="song_artist">艺术家(*)</string>
+    <string name="song_image">图片(*)</string>
+    <string name="song_link_url">链接 URL(*)</string>
+    <string name="song_featured">精选</string>
+    <string name="song_latest">最新</string>
+    <string name="label_featured">精选：</string>
+    <string name="label_latest">最新：</string>
+
+    <string name="action_add">添加</string>
+    <string name="action_edit">编辑</string>
+
+    <string name="msg_delete_title">确认删除</string>
+    <string name="msg_confirm_delete">您确定要删除此项吗？</string>
+    <string name="msg_delete_movie_successfully">歌曲删除成功</string>
+    <string name="msg_name_song_require">请输入名称</string>
+    <string name="msg_artist_song_require">请输入艺术家</string>
+    <string name="msg_image_song_require">请输入图片</string>
+    <string name="msg_link_song_require">请输入链接 URL</string>
+    <string name="msg_edit_song_success">歌曲编辑成功</string>
+    <string name="msg_add_song_success">歌曲添加成功</string>
+
+    <string name="label_facebook">Facebook</string>
+    <string name="label_call">呼叫</string>
+    <string name="label_gmail">Gmail</string>
+    <string name="label_skype">Skype</string>
+    <string name="label_youtube">Youtube</string>
+    <string name="label_zalo">Zalo</string>
+
+    <string name="feedback_name">全名 (*)</string>
+    <string name="feedback_email">电子邮件</string>
+    <string name="feedback_phone">电话</string>
+    <string name="feedback_comment">评论 (*)</string>
+    <string name="send_feedback">发送反馈</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">消息</string>
+    <string name="sync_header">同步</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">您的签名</string>
+    <string name="reply_title">默认回复操作</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">定期同步电子邮件</string>
+    <string name="attachment_title">下载附件</string>
+    <string name="attachment_summary_on">自动下载收件箱中的附件</string>
+    <string name="attachment_summary_off">仅在手动请求时下载附件</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">您好，空白片段</string>
+</resources>

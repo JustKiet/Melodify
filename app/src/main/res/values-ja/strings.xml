@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Melodify</string>
+
+    <string name="menu_home">ホーム</string>
+    <string name="menu_all_songs">すべての曲</string>
+    <string name="menu_featured_songs">おすすめの曲</string>
+    <string name="menu_popular_songs">人気の曲</string>
+    <string name="menu_new_songs">新着の曲</string>
+    <string name="menu_favorite_songs">お気に入りの曲</string>
+    <string name="menu_feedback">フィードバック</string>
+    <string name="menu_contact">お問い合わせ</string>
+    <string name="menu_change_password">パスワードの変更</string>
+    <string name="menu_sign_out">ログアウト</string>
+    <string name="menu_language">言語</string>
+
+    <string name="play_all">すべて再生</string>
+    <string name="view_all">すべて表示</string>
+    <string name="music_player">音楽プレーヤー</string>
+    <string name="views">ビュー数</string>
+    <string name="label_start_time">00:00</string>
+    <string name="label_add_song">曲を追加</string>
+    <string name="label_update_song">曲を更新</string>
+
+    <!-- action -->
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">キャンセル</string>
+
+    <!-- Validate -->
+    <string name="name_require">名前を入力してください</string>
+    <string name="comment_require">コメントを入力してください</string>
+
+    <!-- Hint -->
+    <string name="hint_search_name">曲名を検索...</string>
+
+    <!-- Label -->
+    <string name="label_artist">アーティスト：</string>
+
+    <!-- Message -->
+    <string name="msg_please_waiting">お待ちください...</string>
+    <string name="msg_send_feedback_success">フィードバックを送信しました！</string>
+    <string name="msg_exit_app">アプリを終了しますか？</string>
+    <string name="msg_get_date_error">一般的なエラーが発生しました。後でもう一度お試しください。</string>
+
+    <!-- Module user -->
+    <string name="hint_email">メールアドレス...</string>
+    <string name="hint_password">パスワード...</string>
+    <string name="hint_password_old">古いパスワード...</string>
+    <string name="hint_password_new">新しいパスワード...</string>
+    <string name="hint_password_confirm">新しいパスワードを確認...</string>
+
+    <string name="admin">管理者</string>
+    <string name="user">ユーザー</string>
+    <string name="sign_up">サインアップ</string>
+    <string name="have_account">アカウントをお持ちですか？</string>
+    <string name="have_not_account">アカウントがありませんか？</string>
+    <string name="sign_in">サインイン</string>
+    <string name="forgot_password">パスワードを忘れましたか？</string>
+    <string name="change_password">パスワードの変更</string>
+    <string name="sign_out">サインアウト</string>
+    <string name="reset_password">パスワードのリセット</string>
+
+    <string name="msg_email_require">メールアドレスを入力してください</string>
+    <string name="msg_password_require">パスワードを入力してください</string>
+    <string name="msg_email_invalid">無効なメールアドレスです</string>
+    <string name="msg_email_invalid_admin">管理者のメールアドレスは...@admin.comの形式である必要があります</string>
+    <string name="msg_email_invalid_user">ユーザーのメールアドレスの形式が間違っています</string>
+
+    <string name="msg_old_password_require">古いパスワードを入力してください</string>
+    <string name="msg_new_password_require">新しいパスワードを入力してください</string>
+    <string name="msg_confirm_password_require">新しいパスワードの確認を入力してください</string>
+    <string name="msg_old_password_invalid">古いパスワードが正しくありません</string>
+    <string name="msg_confirm_password_invalid">新しいパスワードの確認が一致しません</string>
+    <string name="msg_new_password_invalid">新しいパスワードが古いパスワードと同じです</string>
+
+    <string name="msg_change_password_successfully">パスワードが正常に変更されました</string>
+    <string name="msg_reset_password_successfully">パスワードが正常にリセットされました。メールを確認してください</string>
+
+    <string name="msg_sign_up_error">サインアップに失敗しました。もう一度お試しください</string>
+    <string name="msg_sign_in_error">サインインに失敗しました。もう一度お試しください</string>
+
+    <string name="song_name">名前(*)</string>
+    <string name="song_artist">アーティスト(*)</string>
+    <string name="song_image">画像(*)</string>
+    <string name="song_link_url">リンク URL(*)</string>
+    <string name="song_featured">おすすめ</string>
+    <string name="song_latest">最新</string>
+    <string name="label_featured">おすすめ：</string>
+    <string name="label_latest">最新：</string>
+
+    <string name="action_add">追加</string>
+    <string name="action_edit">編集</string>
+
+    <string name="msg_delete_title">削除の確認</string>
+    <string name="msg_confirm_delete">この項目を削除しますか？</string>
+    <string name="msg_delete_movie_successfully">曲が正常に削除されました</string>
+    <string name="msg_name_song_require">名前を入力してください</string>
+    <string name="msg_artist_song_require">アーティストを入力してください</string>
+    <string name="msg_image_song_require">画像を入力してください</string>
+    <string name="msg_link_song_require">リンク URLを入力してください</string>
+    <string name="msg_edit_song_success">曲が正常に更新されました</string>
+    <string name="msg_add_song_success">曲が正常に追加されました</string>
+
+    <string name="label_facebook">Facebook</string>
+    <string name="label_call">電話する</string>
+    <string name="label_gmail">Gmail</string>
+    <string name="label_skype">Skype</string>
+    <string name="label_youtube">Youtube</string>
+    <string name="label_zalo">Zalo</string>
+
+    <string name="feedback_name">フルネーム (*)</string>
+    <string name="feedback_email">メールアドレス</string>
+    <string name="feedback_phone">電話番号</string>
+    <string name="feedback_comment">コメント (*)</string>
+    <string name="send_feedback">フィードバックを送信</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">メッセージ</string>
+    <string name="sync_header">同期</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">あなたの署名</string>
+    <string name="reply_title">デフォルトの返信アクション</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">定期的なメール同期</string>
+    <string name="attachment_title">添付ファイルのダウンロード</string>
+    <string name="attachment_summary_on">受信メールの添付ファイルを自動的にダウンロード</string>
+    <string name="attachment_summary_off">必要に応じて添付ファイルのみをダウンロード</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">こんにちは、空白のフラグメントです</string>
+</resources>

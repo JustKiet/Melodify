@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Melodify</string>
+
+    <string name="menu_home">홈</string>
+    <string name="menu_all_songs">모든 노래</string>
+    <string name="menu_featured_songs">추천 노래</string>
+    <string name="menu_popular_songs">인기 노래</string>
+    <string name="menu_new_songs">새로운 노래</string>
+    <string name="menu_favorite_songs">즐겨찾기 노래</string>
+    <string name="menu_feedback">피드백</string>
+    <string name="menu_contact">연락처</string>
+    <string name="menu_change_password">비밀번호 변경</string>
+    <string name="menu_sign_out">로그아웃</string>
+    <string name="menu_language">언어</string>
+
+    <string name="play_all">전체 재생</string>
+    <string name="view_all">모두 보기</string>
+    <string name="music_player">음악 플레이어</string>
+    <string name="views">조회수</string>
+    <string name="label_start_time">00:00</string>
+    <string name="label_add_song">노래 추가</string>
+    <string name="label_update_song">노래 업데이트</string>
+
+    <!-- action -->
+    <string name="action_ok">확인</string>
+    <string name="action_cancel">취소</string>
+
+    <!-- Validate -->
+    <string name="name_require">이름을 입력하세요</string>
+    <string name="comment_require">의견을 입력하세요</string>
+
+    <!-- Hint -->
+    <string name="hint_search_name">노래 이름...</string>
+
+    <!-- Label -->
+    <string name="label_artist">아티스트:</string>
+
+    <!-- Message -->
+    <string name="msg_please_waiting">잠시 기다려주세요...</string>
+    <string name="msg_send_feedback_success">피드백을 성공적으로 보냈습니다!</string>
+    <string name="msg_exit_app">정말로 종료하시겠습니까?</string>
+    <string name="msg_get_date_error">일반 오류가 발생했습니다. 나중에 다시 시도해주세요.</string>
+
+    <!-- Module user -->
+    <string name="hint_email">이메일...</string>
+    <string name="hint_password">비밀번호...</string>
+    <string name="hint_password_old">이전 비밀번호...</string>
+    <string name="hint_password_new">새 비밀번호...</string>
+    <string name="hint_password_confirm">새 비밀번호 확인...</string>
+
+    <string name="admin">관리자</string>
+    <string name="user">사용자</string>
+    <string name="sign_up">가입하기</string>
+    <string name="have_account">계정이 있으신가요?</string>
+    <string name="have_not_account">계정이 없으신가요?</string>
+    <string name="sign_in">로그인</string>
+    <string name="forgot_password">비밀번호를 잊으셨나요?</string>
+    <string name="change_password">비밀번호 변경</string>
+    <string name="sign_out">로그아웃</string>
+    <string name="reset_password">비밀번호 재설정</string>
+
+    <string name="msg_email_require">이메일을 입력하세요</string>
+    <string name="msg_password_require">비밀번호를 입력하세요</string>
+    <string name="msg_email_invalid">유효하지 않은 이메일입니다</string>
+    <string name="msg_email_invalid_admin">관리자 이메일은 ...@admin.com 형식이어야 합니다</string>
+    <string name="msg_email_invalid_user">사용자 이메일 형식이 잘못되었습니다</string>
+
+    <string name="msg_old_password_require">이전 비밀번호를 입력하세요</string>
+    <string name="msg_new_password_require">새 비밀번호를 입력하세요</string>
+    <string name="msg_confirm_password_require">새 비밀번호 확인을 입력하세요</string>
+    <string name="msg_old_password_invalid">잘못된 이전 비밀번호입니다</string>
+    <string name="msg_confirm_password_invalid">새 비밀번호 확인이 일치하지 않습니다</string>
+    <string name="msg_new_password_invalid">새 비밀번호가 이전 비밀번호와 같습니다</string>
+
+    <string name="msg_change_password_successfully">비밀번호 변경이 성공적으로 완료되었습니다</string>
+    <string name="msg_reset_password_successfully">비밀번호 재설정이 성공적으로 완료되었습니다. 이메일을 확인해주세요</string>
+
+    <string name="msg_sign_up_error">가입에 실패했습니다. 다시 시도해주세요</string>
+    <string name="msg_sign_in_error">로그인에 실패했습니다. 다시 시도해주세요</string>
+
+    <string name="song_name">이름(*)</string>
+    <string name="song_artist">아티스트(*)</string>
+    <string name="song_image">이미지(*)</string>
+    <string name="song_link_url">링크 URL(*)</string>
+    <string name="song_featured">추천</string>
+    <string name="song_latest">최신</string>
+    <string name="label_featured">추천:</string>
+    <string name="label_latest">최신:</string>
+
+    <string name="action_add">추가</string>
+    <string name="action_edit">편집</string>
+
+    <string name="msg_delete_title">삭제 확인</string>
+    <string name="msg_confirm_delete">이 항목을 삭제하시겠습니까?</string>
+    <string name="msg_delete_movie_successfully">노래가 성공적으로 삭제되었습니다</string>
+    <string name="msg_name_song_require">이름을 입력하세요</string>
+    <string name="msg_artist_song_require">아티스트를 입력하세요</string>
+    <string name="msg_image_song_require">이미지를 입력하세요</string>
+    <string name="msg_link_song_require">링크 URL을 입력하세요</string>
+    <string name="msg_edit_song_success">노래가 성공적으로 업데이트되었습니다</string>
+    <string name="msg_add_song_success">노래가 성공적으로 추가되었습니다</string>
+
+    <string name="label_facebook">Facebook</string>
+    <string name="label_call">전화 걸기</string>
+    <string name="label_gmail">Gmail</string>
+    <string name="label_skype">Skype</string>
+    <string name="label_youtube">Youtube</string>
+    <string name="label_zalo">Zalo</string>
+
+    <string name="feedback_name">전체 이름 (*)</string>
+    <string name="feedback_email">이메일</string>
+    <string name="feedback_phone">전화번호</string>
+    <string name="feedback_comment">의견 (*)</string>
+    <string name="send_feedback">피드백 보내기</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">메시지</string>
+    <string name="sync_header">동기화</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">귀하의 서명</string>
+    <string name="reply_title">기본 응답 작업</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">정기적으로 이메일 동기화</string>
+    <string name="attachment_title">첨부 파일 다운로드</string>
+    <string name="attachment_summary_on">수신 이메일의 첨부 파일 자동 다운로드</string>
+    <string name="attachment_summary_off">요청 시에만 첨부 파일 다운로드</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">안녕하세요, 빈 프래그먼트입니다</string>
+</resources>

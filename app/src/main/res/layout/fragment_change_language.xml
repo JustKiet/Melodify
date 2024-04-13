@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <Button
+        android:id="@+id/button_english"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="English" />
+
+    <Button
+        android:id="@+id/button_vietnamese"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Tiếng Việt" />
+
+    <Button
+        android:id="@+id/button_french"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Français" />
+
+    <Button
+        android:id="@+id/button_spanish"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Español" />
+
+    <Button
+        android:id="@+id/button_chinese"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="中国话" />
+
+    <Button
+        android:id="@+id/button_korean"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="한국인" />
+
+    <Button
+        android:id="@+id/button_japanese"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="日本語" />
+
+</LinearLayout>

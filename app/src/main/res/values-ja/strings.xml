@@ -107,6 +107,11 @@
     <string name="label_youtube">Youtube</string>
     <string name="label_zalo">Zalo</string>
 
+    <string name="download_modal">この曲をダウンロードしますか？</string>
+    <string name="download_no">いいえ</string>
+    <string name="download_yes">はい</string>
+    <string name="sharing">Melodifyでこの曲をチェックしてください！</string>
+
     <string name="feedback_name">フルネーム (*)</string>
     <string name="feedback_email">メールアドレス</string>
     <string name="feedback_phone">電話番号</string>

@@ -107,6 +107,11 @@
     <string name="label_youtube">Youtube</string>
     <string name="label_zalo">Zalo</string>
 
+    <string name="download_modal">你想下载这首歌吗？</string>
+    <string name="download_no">不</string>
+    <string name="download_yes">是</string>
+    <string name="sharing">在Melodify上查看这首歌曲！</string>
+
     <string name="feedback_name">全名 (*)</string>
     <string name="feedback_email">电子邮件</string>
     <string name="feedback_phone">电话</string>

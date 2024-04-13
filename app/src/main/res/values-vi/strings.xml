@@ -107,6 +107,12 @@
     <string name="label_youtube">Youtube</string>
     <string name="label_zalo">Zalo</string>
 
+    <string name="download_modal">Bạn có muốn tải bài hát này không?</string>
+    <string name="download_no">Không</string>
+    <string name="download_yes">Có</string>
+    <string name="sharing">Hãy cùng thưởng thức bài hát này trên ứng dụng Melodify nào!</string>
+
+
     <string name="feedback_name">Tên đầy đủ (*)</string>
     <string name="feedback_email">Email</string>
     <string name="feedback_phone">Số điện thoại</string>

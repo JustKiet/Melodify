@@ -107,6 +107,11 @@
     <string name="label_youtube">Youtube</string>
     <string name="label_zalo">Zalo</string>
 
+    <string name="download_modal">Voulez-vous télécharger cette chanson ?</string>
+    <string name="download_no">Non</string>
+    <string name="download_yes">Oui</string>
+    <string name="sharing">Découvrez cette chanson sur Melodify !</string>
+
     <string name="feedback_name">Nom complet (*)</string>
     <string name="feedback_email">E-mail</string>
     <string name="feedback_phone">Téléphone</string>

@@ -125,6 +125,28 @@
                 android:layout_marginStart="@dimen/define_dimen_20"
                 tools:ignore="ContentDescription" />
         </LinearLayout>
-    </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_download_black"
+                android:layout_marginEnd="@dimen/define_dimen_20"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/img_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share_black"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

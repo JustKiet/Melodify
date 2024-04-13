@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
 import android.widget.SeekBar;
+import android.graphics.Bitmap;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -70,6 +71,9 @@ public class PlaySongFragment extends Fragment implements View.OnClickListener {
         mFragmentPlaySongBinding.imgPrevious.setOnClickListener(this);
         mFragmentPlaySongBinding.imgPlay.setOnClickListener(this);
         mFragmentPlaySongBinding.imgNext.setOnClickListener(this);
+        mFragmentPlaySongBinding.imgDownload.setOnClickListener(this);
+        mFragmentPlaySongBinding.imgShare.setOnClickListener(this);
+
 
         mFragmentPlaySongBinding.seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -213,6 +217,11 @@ public class PlaySongFragment extends Fragment implements View.OnClickListener {
                 clickOnRepeatButton();
                 break;
 
+            case R.id.img_share:
+                shareSong();
+                break;
+
+
             default:
                 break;
         }
@@ -270,5 +279,22 @@ public class PlaySongFragment extends Fragment implements View.OnClickListener {
         } else {
             GlobalFunction.startMusicService(getActivity(), Constant.RESUME, MusicService.mSongPosition);
         }
+    }
+
+    private void shareSong() {
+        if (getActivity() == null) return;
+
+        Bitmap screenshot = AppUtil.takeScreenshot(getActivity());
+
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.setType("image/*");
+
+        // Sử dụng getActivity() để lấy context của activity chứa fragment
+        String sharingText = getActivity().getString(R.string.sharing);
+        shareIntent.putExtra(Intent.EXTRA_TEXT, sharingText);
+
+        shareIntent.putExtra(Intent.EXTRA_STREAM, AppUtil.getImageUri(getActivity(), screenshot));
+
+        startActivity(Intent.createChooser(shareIntent, "Share song via"));
     }
 }

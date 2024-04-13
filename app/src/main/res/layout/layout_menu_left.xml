@@ -162,6 +162,16 @@
                     android:textSize="@dimen/text_size_normal" />
 
                 <TextView
+                    android:id="@+id/tv_menu_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_language"
+                    android:drawablePadding="@dimen/define_dimen_10"
+                    android:padding="@dimen/define_dimen_14"
+                    android:text="@string/menu_language"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+                <TextView
                     android:id="@+id/tv_menu_sign_out"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -172,16 +182,6 @@
                     android:drawablePadding="@dimen/define_dimen_10"
                     android:textSize="@dimen/text_size_normal" />
 
-                <TextView
-                    android:id="@+id/tv_menu_language"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_menu_language"
-                    android:drawablePadding="@dimen/define_dimen_10"
-                    android:padding="@dimen/define_dimen_14"
-                    android:text="@string/menu_language"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/text_size_normal" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

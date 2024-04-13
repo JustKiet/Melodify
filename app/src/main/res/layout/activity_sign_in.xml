@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:ignore="Autofill" >
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/define_dimen_150"
+        android:layout_height="@dimen/define_dimen_150"
+        android:src="@drawable/img_splash"
+        app:civ_border_color="@color/yellow"
+        app:civ_border_width="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/define_dimen_50" />
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -26,8 +37,8 @@
             android:id="@+id/edt_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_email"
             android:layout_marginTop="@dimen/define_dimen_20"
+            android:hint="@string/hint_email"
             android:imeOptions="actionNext"
             android:inputType="textEmailAddress"
             android:textColor="@color/textColorPrimary"
@@ -80,10 +91,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/define_dimen_10"
             android:padding="@dimen/define_dimen_10"
-            android:textSize="@dimen/text_size_small"
+            android:text="@string/forgot_password"
             android:textColor="@color/blue"
-            android:textStyle="bold"
-            android:text="@string/forgot_password"/>
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

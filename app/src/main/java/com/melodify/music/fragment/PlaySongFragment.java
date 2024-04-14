@@ -12,6 +12,12 @@ import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
 import android.widget.SeekBar;
 import android.graphics.Bitmap;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.app.DownloadManager;
+import android.content.Context;
+import android.net.Uri;
+import android.os.Environment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,8 +33,17 @@ import com.melodify.music.service.MusicService;
 import com.melodify.music.utils.AppUtil;
 import com.melodify.music.utils.GlideUtils;
 
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 @SuppressLint("NonConstantResourceId")
 public class PlaySongFragment extends Fragment implements View.OnClickListener {
@@ -221,6 +236,9 @@ public class PlaySongFragment extends Fragment implements View.OnClickListener {
                 shareSong();
                 break;
 
+            case R.id.img_download:
+                showDownloadDialog();
+                break;
 
             default:
                 break;
@@ -296,5 +314,71 @@ public class PlaySongFragment extends Fragment implements View.OnClickListener {
         shareIntent.putExtra(Intent.EXTRA_STREAM, AppUtil.getImageUri(getActivity(), screenshot));
 
         startActivity(Intent.createChooser(shareIntent, "Share song via"));
+    }
+
+    private void showDownloadDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setMessage(R.string.download_modal)
+                .setPositiveButton(R.string.download_yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        downloadSong();
+                    }
+                })
+                .setNegativeButton(R.string.download_no, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                    }
+                });
+        builder.create().show();
+    }
+
+    private String getUrlFromJSON(String title) {
+        String json;
+        try {
+            InputStream is = getResources().openRawResource(R.raw.melodifydata);
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, StandardCharsets.UTF_8);
+
+            JSONObject jsonObject = new JSONObject(json);
+            JSONArray songsArray = jsonObject.getJSONArray("songs");
+            for (int i = 0; i < songsArray.length(); i++) {
+                JSONObject songObject = songsArray.optJSONObject(i);
+                if (songObject != null) {
+                    String jsonTitle = songObject.optString("title");
+                    if (jsonTitle != null && jsonTitle.equals(title)) {
+                        return songObject.optString("url");
+                    }
+                }
+            }
+        } catch (IOException | JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
+
+    private void downloadSong() {
+        String title = MusicService.mListSongPlaying.get(MusicService.mSongPosition).getTitle();
+        String url = getUrlFromJSON(title);
+
+        if (url != null) {
+
+            DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
+            request.setTitle(title);
+            request.setDescription("Downloading " + title);
+            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+            request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, title + ".mp3");
+
+            DownloadManager downloadManager = (DownloadManager) requireActivity().getSystemService(Context.DOWNLOAD_SERVICE);
+
+            if (downloadManager != null) {
+                downloadManager.enqueue(request);
+            } else {
+            }
+        } else {
+        }
     }
 }

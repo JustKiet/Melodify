@@ -2,7 +2,7 @@ package com.melodify.music.constant;
 
 public interface AboutUsConfig {
     String ABOUT_US_TITLE = "A Product of Group 4";
-    String ABOUT_US_CONTENT = "Provides users with optimal music services, proudly giving you TOP QUALITY TRACKS.";
+    String ABOUT_US_CONTENT = "Provides users with optimal music services, proudly providing TOP QUALITY TRACKS.";
     String ABOUT_US_SLOGAN = "Experience the harmony of music and satisfaction with Melodify";
     String ABOUT_US_WEBSITE_TITLE = "Our Website";
 

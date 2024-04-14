@@ -110,6 +110,7 @@
     <string name="download_modal">이 노래를 다운로드 하시겠습니까?</string>
     <string name="download_no">아니요</string>
     <string name="download_yes">예</string>
+    <string name="download_notification">다운로드</string>
     <string name="sharing">Melodify에서 이 노래를 확인해보세요!</string>
 
     <string name="feedback_name">전체 이름 (*)</string>

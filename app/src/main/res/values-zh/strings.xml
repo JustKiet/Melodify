@@ -110,6 +110,7 @@
     <string name="download_modal">你想下载这首歌吗？</string>
     <string name="download_no">不</string>
     <string name="download_yes">是</string>
+    <string name="download_notification">下载</string>
     <string name="sharing">在Melodify上查看这首歌曲！</string>
 
     <string name="feedback_name">全名 (*)</string>

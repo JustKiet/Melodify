@@ -110,6 +110,7 @@
     <string name="download_modal">Bạn có muốn tải bài hát này không?</string>
     <string name="download_no">Không</string>
     <string name="download_yes">Có</string>
+    <string name="download_notification">Tải xuống</string>
     <string name="sharing">Hãy cùng thưởng thức bài hát này trên ứng dụng Melodify nào!</string>
 
 

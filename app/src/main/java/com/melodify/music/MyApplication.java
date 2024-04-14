@@ -28,7 +28,8 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         FirebaseApp.initializeApp(this);
-        mFirebaseDatabase = FirebaseDatabase.getInstance(FIREBASE_URL);
+        mFirebaseDatabase = FirebaseDatabase.getInstance();
+        mFirebaseDatabase.setPersistenceEnabled(true);
         createChannelNotification();
         DataStoreManager.init(getApplicationContext());
     }

@@ -110,6 +110,7 @@
     <string name="download_modal">Do you want to download this song?</string>
     <string name="download_no">No</string>
     <string name="download_yes">Yes</string>
+    <string name="download_notification">Download</string>
     <string name="sharing">Check out this song on Melodify!</string>
 
     <string name="feedback_name">Full name (*)</string>

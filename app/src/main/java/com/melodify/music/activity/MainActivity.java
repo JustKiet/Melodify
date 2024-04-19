@@ -352,7 +352,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void handleMusicAction() {
-        if (Constant.CANNEL_NOTIFICATION == mAction) {
+        if (Constant.CANCEL_NOTIFICATION == mAction) {
             mActivityMainBinding.layoutBottom.layoutItem.setVisibility(View.GONE);
             return;
         }
@@ -396,7 +396,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void clickOnCloseButton() {
-        GlobalFunction.startMusicService(this, Constant.CANNEL_NOTIFICATION, MusicService.mSongPosition);
+        GlobalFunction.startMusicService(this, Constant.CANCEL_NOTIFICATION, MusicService.mSongPosition);
     }
 
     private void openPlayMusicActivity() {

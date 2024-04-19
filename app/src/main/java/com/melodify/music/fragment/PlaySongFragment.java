@@ -117,7 +117,7 @@ public class PlaySongFragment extends Fragment implements View.OnClickListener {
     }
 
     private void handleMusicAction() {
-        if (Constant.CANNEL_NOTIFICATION == mAction) {
+        if (Constant.CANCEL_NOTIFICATION == mAction) {
             if (getActivity() != null) {
                 getActivity().onBackPressed();
             }

@@ -97,7 +97,7 @@ public class MusicService extends Service implements MediaPlayer.OnPreparedListe
                 resumeSong();
                 break;
 
-            case Constant.CANNEL_NOTIFICATION:
+            case Constant.CANCEL_NOTIFICATION:
                 cancelNotification();
                 break;
 
@@ -233,7 +233,7 @@ public class MusicService extends Service implements MediaPlayer.OnPreparedListe
             remoteViews.setImageViewResource(R.id.img_play, R.drawable.ic_play_gray);
             remoteViews.setOnClickPendingIntent(R.id.img_play, GlobalFunction.openMusicReceiver(this, Constant.RESUME));
         }
-        remoteViews.setOnClickPendingIntent(R.id.img_close, GlobalFunction.openMusicReceiver(this, Constant.CANNEL_NOTIFICATION));
+        remoteViews.setOnClickPendingIntent(R.id.img_close, GlobalFunction.openMusicReceiver(this, Constant.CANCEL_NOTIFICATION));
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, MyApplication.CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_small_push_notification)

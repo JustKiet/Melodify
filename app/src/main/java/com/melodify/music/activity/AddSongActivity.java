@@ -31,7 +31,7 @@ public class AddSongActivity extends BaseActivity {
         initToolbar();
         initView();
 
-        mActivityAddSongBinding.btnAddOrEdit.setOnClickListener(v -> addOrEditFood());
+        mActivityAddSongBinding.btnAddOrEdit.setOnClickListener(v -> addOrEditSong());
     }
 
     private void getDataIntent() {
@@ -66,7 +66,7 @@ public class AddSongActivity extends BaseActivity {
         }
     }
 
-    private void addOrEditFood() {
+    private void addOrEditSong() {
         String strName = mActivityAddSongBinding.edtName.getText().toString().trim();
         String strArtist = mActivityAddSongBinding.edtArtist.getText().toString().trim();
         String strImage = mActivityAddSongBinding.edtImage.getText().toString().trim();

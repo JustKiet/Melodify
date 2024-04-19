@@ -111,6 +111,7 @@
     <string name="download_no">No</string>
     <string name="download_yes">Yes</string>
     <string name="download_notification">Download</string>
+    <string name="not_downloaded">You need to download this song first</string>
     <string name="sharing">Check out this song on Melodify!</string>
 
     <string name="feedback_name">Full name (*)</string>

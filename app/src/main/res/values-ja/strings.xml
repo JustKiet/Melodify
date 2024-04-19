@@ -111,6 +111,7 @@
     <string name="download_no">いいえ</string>
     <string name="download_yes">はい</string>
     <string name="download_notification">ダウンロード</string>
+    <string name="not_downloaded">この曲はまだダウンロードされていません。</string>
     <string name="sharing">Melodifyでこの曲をチェックしてください！</string>
 
     <string name="feedback_name">フルネーム (*)</string>

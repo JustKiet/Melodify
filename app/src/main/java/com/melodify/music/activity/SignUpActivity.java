@@ -23,8 +23,6 @@ public class SignUpActivity extends BaseActivity {
         mActivitySignUpBinding = ActivitySignUpBinding.inflate(getLayoutInflater());
         setContentView(mActivitySignUpBinding.getRoot());
 
-        mActivitySignUpBinding.rdbUser.setChecked(true);
-
         mActivitySignUpBinding.imgBack.setOnClickListener(v -> onBackPressed());
         mActivitySignUpBinding.layoutSignIn.setOnClickListener(v -> finish());
         mActivitySignUpBinding.btnSignUp.setOnClickListener(v -> onClickValidateSignUp());
@@ -40,20 +38,7 @@ public class SignUpActivity extends BaseActivity {
         } else if (!StringUtil.isValidEmail(strEmail)) {
             Toast.makeText(SignUpActivity.this, getString(R.string.msg_email_invalid), Toast.LENGTH_SHORT).show();
         } else {
-            if (mActivitySignUpBinding.rdbAdmin.isChecked()) {
-                if (!strEmail.contains(Constant.ADMIN_EMAIL_FORMAT)) {
-                    Toast.makeText(SignUpActivity.this, getString(R.string.msg_email_invalid_admin), Toast.LENGTH_SHORT).show();
-                } else {
-                    signUpUser(strEmail, strPassword);
-                }
-                return;
-            }
-
-            if (strEmail.contains(Constant.ADMIN_EMAIL_FORMAT)) {
-                Toast.makeText(SignUpActivity.this, getString(R.string.msg_email_invalid_user), Toast.LENGTH_SHORT).show();
-            } else {
-                signUpUser(strEmail, strPassword);
-            }
+            signUpUser(strEmail, strPassword);
         }
     }
 
@@ -67,7 +52,7 @@ public class SignUpActivity extends BaseActivity {
                         FirebaseUser user = firebaseAuth.getCurrentUser();
                         if (user != null) {
                             User userObject = new User(user.getEmail(), password);
-                            if (user.getEmail() != null && user.getEmail().contains(Constant.ADMIN_EMAIL_FORMAT)) {
+                            if (user.getEmail() != null && user.getEmail().endsWith(Constant.ADMIN_EMAIL_FORMAT)) {
                                 userObject.setAdmin(true);
                             }
                             DataStoreManager.setUser(userObject);
@@ -80,4 +65,5 @@ public class SignUpActivity extends BaseActivity {
                     }
                 });
     }
+
 }

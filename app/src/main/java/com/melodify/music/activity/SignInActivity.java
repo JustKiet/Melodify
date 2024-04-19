@@ -22,9 +22,6 @@ public class SignInActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         mActivitySignInBinding = ActivitySignInBinding.inflate(getLayoutInflater());
         setContentView(mActivitySignInBinding.getRoot());
-
-        mActivitySignInBinding.rdbUser.setChecked(true);
-
         mActivitySignInBinding.layoutSignUp.setOnClickListener(
                 v -> GlobalFunction.startActivity(SignInActivity.this, SignUpActivity.class));
 
@@ -46,24 +43,15 @@ public class SignInActivity extends BaseActivity {
         } else if (!StringUtil.isValidEmail(strEmail)) {
             Toast.makeText(SignInActivity.this, getString(R.string.msg_email_invalid), Toast.LENGTH_SHORT).show();
         } else {
-            if (mActivitySignInBinding.rdbAdmin.isChecked()) {
-                if (!strEmail.contains(Constant.ADMIN_EMAIL_FORMAT)) {
-                    Toast.makeText(SignInActivity.this, getString(R.string.msg_email_invalid_admin), Toast.LENGTH_SHORT).show();
-                } else {
-                    signInUser(strEmail, strPassword);
-                }
-                return;
-            }
-
-            if (strEmail.contains(Constant.ADMIN_EMAIL_FORMAT)) {
-                Toast.makeText(SignInActivity.this, getString(R.string.msg_email_invalid_user), Toast.LENGTH_SHORT).show();
+            if (strEmail.endsWith(Constant.ADMIN_EMAIL_FORMAT)) {
+                signInUser(strEmail, strPassword, true);
             } else {
-                signInUser(strEmail, strPassword);
+                signInUser(strEmail, strPassword, false);
             }
         }
     }
 
-    private void signInUser(String email, String password) {
+    private void signInUser(String email, String password, boolean isAdmin) {
         showProgressDialog(true);
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         firebaseAuth.signInWithEmailAndPassword(email, password)
@@ -73,9 +61,7 @@ public class SignInActivity extends BaseActivity {
                         FirebaseUser user = firebaseAuth.getCurrentUser();
                         if (user != null) {
                             User userObject = new User(user.getEmail(), password);
-                            if (user.getEmail() != null && user.getEmail().contains(Constant.ADMIN_EMAIL_FORMAT)) {
-                                userObject.setAdmin(true);
-                            }
+                            userObject.setAdmin(isAdmin);
                             DataStoreManager.setUser(userObject);
                             GlobalFunction.startActivity(SignInActivity.this, MainActivity.class);
                             finishAffinity();
@@ -86,4 +72,5 @@ public class SignInActivity extends BaseActivity {
                     }
                 });
     }
+
 }
